@@ -1,0 +1,417 @@
+/* RESETEO DE PAGINA */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMIENZO DE MENU DE NAVEGACION/HEADER */
+.menu img{
+    width: 115px;
+    margin-left: 40px;
+}
+
+.navbar-nav{
+    column-gap: 50px;
+    list-style:none;
+    margin-left: 100px;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    color:rgb(143, 46, 199);
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.iconos{
+    display:inline-flex;
+    color: whitesmoke;
+    column-gap: 30px;
+    margin-left: 225px;
+} 
+/* FIN DEL MENU DE NAVEGACION */
+
+/* PRESENTACIO  DE LA ARTISTA */
+#presentacion{
+    display: flex;
+    flex: 25%;
+    background-color: rgb(0, 0, 0);
+    justify-content:space-around;
+}
+
+#presentacion img{
+    width: 400px;
+    margin: 30px;
+    border: 2px rgb(255, 255, 255) solid;
+} 
+
+.texto{
+    margin-top: 50px;
+    border-top: 2px white solid;
+    border-left: 2px white solid;
+}
+
+.texto p{
+    margin: 55px;
+    color: whitesmoke;
+    font-size: 18px;
+    font-family:'Alata', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: overline;
+    margin-top: 50px;
+    font-family: 'Alata', sans-serif;
+}
+
+/* COMIENZO DE LA SESION PORTFOLIO */
+#trabajos{
+    background-color: rgb(0, 0, 0);
+}
+
+h2{
+    font-size: 30px;
+    color:rgb(143, 46, 199);
+    font-family: 'Alata', sans-serif;
+    text-align: end;
+    margin-right: 15px;
+    padding-top: 12PX;
+    padding-bottom: 10px;
+}
+
+.padre{
+    flex: 25%;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.hijo{ 
+    display: flex;
+    width: 25%;
+    padding: 5px; 
+}
+
+.hijo img{
+    width: 100%;
+    margin-right: 5px;
+    border: 1px white solid;
+}
+/* FIN DEL PORTFOLIO */
+
+/* COMIENZO DE LA SESION DE EXPERIENCIAS/CAROUSEL DE TARJETAS*/
+#experiencias{
+    background-color: #000000;
+    padding: 15px;
+}
+
+h3{
+    font-size: 30px;
+    color:rgb(143, 46, 199);
+    font-family: 'Alata', sans-serif;
+    margin-left: 15px;
+    padding-top: 15PX;
+}
+
+.card-wrap{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 0.6em;
+    background-color: white;
+    border: solid rgb(143, 46, 199);
+    border-radius: 25%;
+}
+
+.card-text{
+    color: black;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.carousel-inner{
+    padding: 15px;
+}
+
+.carousel-indicators{
+    margin: 2px;
+}
+
+.carousel-control-prev{
+    justify-content: left;
+}
+
+.carousel-control-next{
+    justify-content: right;
+}
+/* FIN DE LA SESION DE EXPERIENCIAS/CAROUSEL DE TARJETAS*/
+
+/* COMIENZO DE LA SESION DE FAQS/ACORDEON */
+#faqs{
+    background-color: #000000;
+    padding-bottom: 10px;
+}
+
+.accordion{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+.accordion-button{
+    font-size: 18px;
+    font-family:'Alata', sans-serif;
+    font-weight: bold;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+#faqs p{
+    color: black;
+    font-family:'Alata', sans-serif;
+    text-align: justify;
+    margin-left: 15px;
+} 
+
+.accordion-header{
+    padding:0%;
+    margin: 0%;
+}
+/* FIN DE LA SESION DE FAQS/ACORDEON */
+
+/* COMIENZO DE LA SESION DE CONTACTO/FORM*/
+#contacto{
+    background-color: #000000
+}
+
+.formulario{
+    border: solid white;
+    margin-left: 20px;
+    margin-right: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#contacto p{
+    color: rgb(255, 255, 255);
+    margin-left:30px ;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+#contacto label{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+
+#contacto button{
+    color: rgb(19, 17, 17);
+    font-size: 13px;
+    font-family: 'Alata', sans-serif;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#contacto input{
+    margin-left: 15px;
+}
+/* FIN DE LA SESION DE CONTACTO/FORM */
+
+/* COMIENZO DEL PIE DE PAGINA */
+footer{
+    background-color: #000000;
+    color: rgb(143, 46, 199);
+    padding-top: 1px;
+    padding-left: 4px;
+    display: flex; 
+    justify-content:space-around;
+    border-top:white solid 2px;
+}
+
+h5{
+    color: rgb(143, 46, 199);
+    font-size: 18px;
+    font-family:'Alata', sans-serif;
+    padding-top:15px;
+    padding-bottom:12px;
+    text-align:start;
+}
+
+.foot i{
+    margin-right: 15px;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#pie i{
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#pie p{
+    padding: 0%;
+    margin: 0%;
+}  
+/* FIN DEL PIE DE PAGINA */
+
+/* RESPONSIVE DESING */
+@media screen and (max-width:1024px){
+    #presentacion img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px){  
+    #presentacion{
+        display: flex;
+        justify-content: space-around;
+    } 
+    
+    #presentacion img{
+        height: 300px;
+        margin: 15px;
+        margin-top: 60px;
+    }
+    
+    h1{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+    
+    .texto p{
+        font-size: 15px;
+        margin: 35px;
+        margin-top: 15px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    #presentacion{
+        flex-wrap: wrap-reverse;
+    }
+    
+    #presentacion img{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    .texto{
+        margin-top: 5px;
+        border:none;
+    } 
+
+    .texto p{
+        font-size: 14x;
+        margin-bottom: 15px;
+    }  
+
+    .card-wrap{
+        display:inline-flex;
+        flex-wrap: wrap; 
+        justify-items: stretch;
+    }
+
+    h5{
+        padding-left: 1px;
+        text-align: center;
+    }     
+    
+    .foot i{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container-fluid img{
+        width: 80px;
+    }
+
+    .container-fluid span{
+        height: 10px;
+        width: 15px;
+    }
+    
+    .navbar-nav a{
+        font-size: 15px;
+    }
+
+    #presentacion img{
+        width: 300px;
+        margin-top: 10px; 
+    }
+
+    h2{
+        font-size: 23px;
+    }
+            
+    h3{
+        font-size: 23px;
+    }
+
+    .card-text{
+        font-size: 13px;
+    }
+
+    .accordion{
+        width: 450px;
+        padding-left: 60px;
+    }
+
+    .accordion-button{
+        font-size: 15px;
+        padding-top: 15px ;
+        padding-bottom: 15px;
+    }
+    
+    #faqs p{
+        font-size: 14px;
+        }
+
+    #contacto p{
+        font-size: 14px;
+    }
+
+    #contacto label{
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    #contacto button{
+        font-size: 12px;
+    }
+
+    h5{
+        font-size: 15px;
+    }
+    
+    .foot p{
+        font-size: 13px;
+        margin: 0px;
+    } 
+
+    .foot i{
+        display: block;
+        padding-bottom:30px;
+        font-size: 30px;
+    }
+
+    #pie i{
+        font-size: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+/* FIN DEL RESPONSIVE DESING */
