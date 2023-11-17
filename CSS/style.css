@@ -187,17 +187,110 @@ h3{
 }
 /* FIN DE LA SESION DE FAQS/ACORDEON */
 
-/* COMIENZO DE LA SESION DE CONTACTO/FORM*/
-#contacto{
-    background-color: #000000
+/* COMIENZO DE LA SESION DE CONTACTO/FORMULARIO/MODAL*/
+.cotizacion {
+    width: 100%;
+    height: 100px;
+    padding-left: 30px ;
 }
 
-.formulario{
-    border: solid white;
-    margin-left: 20px;
-    margin-right: 25px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
+.cotizacion p {
+    font-size: 15px;
+    margin-right: 30px;
+    text-decoration: solid;
+} 
+
+.btn {
+    text-align: center; 
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(143, 46, 199);
+    color: #fff;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(63, 8, 88);
+}
+
+.contenedor-modal{
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+    place-content: center;
+}
+
+.modal{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    max-width: 600px;
+    max-height: 90%;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+
+.modal img{
+    width: 90%;
+    max-width: 300px;
+}
+
+.modal a{
+    font-size: 20px;
+    margin-left: 100%;
+    background-color: rgb(143, 46, 199);
+    border-radius: 8px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal p{
+    font-weight: bold;
+    margin: 0;
+}
+
+.titulo-modal{
+    font-size: 25px;
+    color: rgb(143, 46, 199);
+    text-decoration: overline underline;
+    margin-top: 5px;    
+}
+
+.contenedor-modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+}
+
+form input {
+    margin: 15px;
+    padding: 8px;
+}
+
+#contacto{
+    background-color: #000000
 }
 
 #contacto p{
@@ -207,25 +300,13 @@ h3{
     margin-bottom: 10px
 }
 
-#contacto label{
-    color: rgb(255, 255, 255);
-    padding: 15px;
-    font-size: 15px;
+.datos label{
+    color: rgb(143, 46, 199);
+    padding: 8px;
+    font-size: 16px;
     font-family: 'Alata', sans-serif;
 }
 
-#contacto button{
-    color: rgb(19, 17, 17);
-    font-size: 13px;
-    font-family: 'Alata', sans-serif;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-#contacto input{
-    margin-left: 15px;
-}
 /* FIN DE LA SESION DE CONTACTO/FORM */
 
 /* COMIENZO DEL PIE DE PAGINA */
@@ -235,7 +316,7 @@ footer{
     padding-top: 1px;
     padding-left: 4px;
     display: flex; 
-    justify-content:space-around;
+    justify-content:space-around; 
     border-top:white solid 2px;
 }
 
@@ -249,8 +330,7 @@ h5{
 }
 
 .foot i{
-    margin-right: 15px;
-    display: block;
+    margin-right: 20px;
     font-size: 30px;
     margin-bottom: 30px;
 }
@@ -259,6 +339,7 @@ h5{
     font-size: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
+    display: block;
 }
 
 #pie p{
